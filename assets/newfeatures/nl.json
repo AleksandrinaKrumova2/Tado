@@ -1,0 +1,16 @@
+{
+  "introScreens":{
+      "NewReport":{
+        "text": "Ontdek het nieuwe rapport voor elke ruimte."
+      },
+      "HeatRequest1": {
+        "text": "Nu is elke warmtevraag per zone weergegeven: geen / laag / gemiddeld / hoog"
+      },
+      "HeatRequest2":{
+        "text": "De warmtevraag duidt de actuele verwarmingsvraag van elke zone van het verwarmingssysteem aan.",
+        "link": {
+          "url": "https://support.tado.com/hc/nl/articles/115002719763"
+        }
+        }
+   }
+}

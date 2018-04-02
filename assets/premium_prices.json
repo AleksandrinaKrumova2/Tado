@@ -1,0 +1,20 @@
+{
+  "GBR": {
+    "reducedPrice": 1.95,
+    "regularPrice": 3.95,
+    "currencyCode": "GBP",
+    "currencySymbol": "£"
+  },
+  "DEU" : {
+    "reducedPrice": 1.95,
+    "regularPrice": 3.95,
+    "currencyCode": "EUR",
+    "currencySymbol": "€"
+  },
+  "default": {
+    "reducedPrice": 1.95,
+    "regularPrice": 3.95,
+    "currencyCode": "EUR",
+    "currencySymbol": "€"
+  }
+}

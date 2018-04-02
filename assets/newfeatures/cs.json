@@ -1,0 +1,16 @@
+{
+  "introScreens":{
+      "NewReport":{
+        "text": "Vyzkoušejte nový detailní přehled pro každou zónu."
+      },
+      "HeatRequest1": {
+        "text": "Aplikace nyní zobrazuje také požadavek na teplo (žádný/nízký/střední/vysoký)."
+      },
+      "HeatRequest2":{
+        "text": "Požadavek na teplo vyjadřuje kolik tepla daná zóna požaduje od topného systému / kotle.",
+        "link": {
+          "url": "https://support.tado.com/hc/en-gb/articles/115002719763"
+        }
+        }
+   }
+}

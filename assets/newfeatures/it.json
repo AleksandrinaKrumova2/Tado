@@ -1,0 +1,16 @@
+{
+  "introScreens":{
+      "NewReport":{
+        "text": "Scopri il nuovo report, ricco di dettagli per ogni zona."
+      },
+      "HeatRequest1": {
+        "text": "Ogni zona mostra il livello di richiesta di calore: nessuna  / bassa /  media  / alta."
+      },
+      "HeatRequest2":{
+        "text": "L’indicatore mostra il livello di richiesta di calore di ciascuna zona all’impianto di riscaldamento.",
+        "link": {
+          "url": "https://support.tado.com/hc/it/articles/115002719763"
+        }
+        }
+   }
+}

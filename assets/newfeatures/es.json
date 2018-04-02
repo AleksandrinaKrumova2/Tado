@@ -1,0 +1,16 @@
+{
+  "introScreens":{
+      "NewReport":{
+        "text": "Comprueba el nuevo informe de zona detallado."
+      },
+      "HeatRequest1": {
+        "text": "Ahora cada zona muestra la demanda de calor: ninguna / baja / media / alta."
+      },
+      "HeatRequest2":{
+        "text": "La demanda de calor indica el nivel de calor que está pidiendo cada zona al sistema de calefacción / caldera.",
+        "link": {
+          "url": "https://support.tado.com/hc/es/articles/115002719763"
+        }
+        }
+   }
+}

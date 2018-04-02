@@ -1,0 +1,16 @@
+{
+  "introScreens":{
+      "NewReport":{
+        "text": "Découvrez le tout nouveau rapport détaillé pour chacune de vos pièces."
+      },
+      "HeatRequest1": {
+        "text": "Vous avez désormais accès au besoin en chaleur de chacune de vos pièces: aucun/faible/moyen/élevé."
+      },
+      "HeatRequest2":{
+        "text": "Le niveau actuel de chaleur nécessité par votre système de chauffage/chaudière est indiqué pour chacune de vos pièces.",
+        "link": {
+          "url": "https://support.tado.com/hc/fr/articles/115002719763"
+        }
+        }
+   }
+}

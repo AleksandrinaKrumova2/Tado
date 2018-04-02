@@ -1,0 +1,16 @@
+{
+  "introScreens":{
+      "NewReport":{
+        "text": "Entdecke den neuen Report für jeden Raum."
+      },
+      "HeatRequest1": {
+        "text": "Siehe die Heizanforderung für jeden Raum: keine/niedrig/mittel/hoch."
+      },
+      "HeatRequest2":{
+        "text": "Du kannst die Ausschaltzeit über die App oder an den Geräten beenden.",
+        "link": {
+          "url": "https://support.tado.com/hc/de/articles/115002719763"
+        }
+        }
+   }
+}

@@ -1,0 +1,16 @@
+{
+  "introScreens":{
+      "NewReport":{
+        "text": "Check out the all new detailed report for each zone."
+      },
+      "HeatRequest1": {
+        "text": "Now each zone’s heat request is shown: none/low/medium/high."
+      },
+      "HeatRequest2":{
+        "text": "The heat request indicates the current level of heat requested from each zone from the heating system / boiler.",
+        "link": {
+          "url": "https://support.tado.com/hc/en-gb/articles/115002719763"
+        }
+        }
+   }
+}

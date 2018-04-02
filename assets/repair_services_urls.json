@@ -1,0 +1,34 @@
+{
+  "GBR": [
+    {
+      "name": "bookARepair",
+      "url": "https://www.tado.com/gb/care/book-a-repair"
+    },
+    {
+      "name": "bookABoiler",
+      "url": "https://www.tado.com/gb/care/book-a-boiler-service"
+    },
+    {
+      "name": "getABoilerQuote",
+      "url": "https://www.tado.com/gb/care/get-a-boiler-quote"
+    },
+    {
+      "name": "getABoilerCover",
+      "url": "https://www.tado.com/gb/care/get-a-boiler-cover"
+    }
+  ],
+  "DEU": [
+    {
+      "name": "bookARepair",
+      "url": "https://www.tado.com/de/heizungsservice/reparatur-buchen"
+    },
+    {
+      "name": "bookABoiler",
+      "url": "https://www.tado.com/de/heizungsservice/wartung-buchen"
+    },
+    {
+      "name": "getABoilerQuote",
+      "url": "https://www.tado.com/de/heizungsservice/angebot-einholen"
+    }
+  ]
+}
