@@ -1,38 +1,23 @@
-package com.google.android.gms.maps.model;
+package com.google.android.gms.maps;
 
-import android.os.Parcel;
-import android.os.Parcelable.Creator;
-import android.support.v4.internal.view.SupportMenu;
-import com.google.android.gms.internal.zzbfn;
+import android.location.Location;
+import android.os.RemoteException;
+import com.google.android.gms.maps.LocationSource.OnLocationChangedListener;
+import com.google.android.gms.maps.internal.zzah;
+import com.google.android.gms.maps.model.RuntimeRemoteException;
 
-public final class zzm implements Creator<StreetViewPanoramaCamera> {
-    public final /* synthetic */ Object createFromParcel(Parcel parcel) {
-        float f = 0.0f;
-        int zzd = zzbfn.zzd(parcel);
-        float f2 = 0.0f;
-        float f3 = 0.0f;
-        while (parcel.dataPosition() < zzd) {
-            int readInt = parcel.readInt();
-            switch (SupportMenu.USER_MASK & readInt) {
-                case 2:
-                    f3 = zzbfn.zzl(parcel, readInt);
-                    break;
-                case 3:
-                    f2 = zzbfn.zzl(parcel, readInt);
-                    break;
-                case 4:
-                    f = zzbfn.zzl(parcel, readInt);
-                    break;
-                default:
-                    zzbfn.zzb(parcel, readInt);
-                    break;
-            }
-        }
-        zzbfn.zzaf(parcel, zzd);
-        return new StreetViewPanoramaCamera(f3, f2, f);
+final class zzm implements OnLocationChangedListener {
+    private /* synthetic */ zzah zzirm;
+
+    zzm(zzl com_google_android_gms_maps_zzl, zzah com_google_android_gms_maps_internal_zzah) {
+        this.zzirm = com_google_android_gms_maps_internal_zzah;
     }
 
-    public final /* synthetic */ Object[] newArray(int i) {
-        return new StreetViewPanoramaCamera[i];
+    public final void onLocationChanged(Location location) {
+        try {
+            this.zzirm.zzd(location);
+        } catch (RemoteException e) {
+            throw new RuntimeRemoteException(e);
+        }
     }
 }

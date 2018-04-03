@@ -1,38 +1,18 @@
-package com.google.android.gms.maps.model;
+package com.google.android.gms.maps;
 
-import android.os.Parcel;
-import android.os.Parcelable.Creator;
-import android.support.v4.internal.view.SupportMenu;
-import com.google.android.gms.internal.zzbfn;
+import com.google.android.gms.maps.GoogleMap.OnCircleClickListener;
+import com.google.android.gms.maps.internal.zzw;
+import com.google.android.gms.maps.model.Circle;
+import com.google.android.gms.maps.model.internal.zzd;
 
-public final class zzo implements Creator<StreetViewPanoramaLocation> {
-    public final /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int zzd = zzbfn.zzd(parcel);
-        String str = null;
-        LatLng latLng = null;
-        StreetViewPanoramaLink[] streetViewPanoramaLinkArr = null;
-        while (parcel.dataPosition() < zzd) {
-            int readInt = parcel.readInt();
-            switch (SupportMenu.USER_MASK & readInt) {
-                case 2:
-                    streetViewPanoramaLinkArr = (StreetViewPanoramaLink[]) zzbfn.zzb(parcel, readInt, StreetViewPanoramaLink.CREATOR);
-                    break;
-                case 3:
-                    latLng = (LatLng) zzbfn.zza(parcel, readInt, LatLng.CREATOR);
-                    break;
-                case 4:
-                    str = zzbfn.zzq(parcel, readInt);
-                    break;
-                default:
-                    zzbfn.zzb(parcel, readInt);
-                    break;
-            }
-        }
-        zzbfn.zzaf(parcel, zzd);
-        return new StreetViewPanoramaLocation(streetViewPanoramaLinkArr, latLng, str);
+final class zzo extends zzw {
+    private /* synthetic */ OnCircleClickListener zziro;
+
+    zzo(GoogleMap googleMap, OnCircleClickListener onCircleClickListener) {
+        this.zziro = onCircleClickListener;
     }
 
-    public final /* synthetic */ Object[] newArray(int i) {
-        return new StreetViewPanoramaLocation[i];
+    public final void zza(zzd com_google_android_gms_maps_model_internal_zzd) {
+        this.zziro.onCircleClick(new Circle(com_google_android_gms_maps_model_internal_zzd));
     }
 }

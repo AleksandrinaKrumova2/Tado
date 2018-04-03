@@ -1,30 +1,24 @@
-package com.google.android.gms.maps.model;
+package com.google.android.gms.maps;
 
-import android.os.Parcel;
-import android.os.Parcelable.Creator;
-import android.support.v4.internal.view.SupportMenu;
-import com.google.android.gms.internal.zzbfn;
+import com.google.android.gms.dynamic.IObjectWrapper;
+import com.google.android.gms.dynamic.zzn;
+import com.google.android.gms.maps.GoogleMap.InfoWindowAdapter;
+import com.google.android.gms.maps.internal.zzi;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.internal.zzp;
 
-public final class zzg implements Creator<MapStyleOptions> {
-    public final /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int zzd = zzbfn.zzd(parcel);
-        String str = null;
-        while (parcel.dataPosition() < zzd) {
-            int readInt = parcel.readInt();
-            switch (SupportMenu.USER_MASK & readInt) {
-                case 2:
-                    str = zzbfn.zzq(parcel, readInt);
-                    break;
-                default:
-                    zzbfn.zzb(parcel, readInt);
-                    break;
-            }
-        }
-        zzbfn.zzaf(parcel, zzd);
-        return new MapStyleOptions(str);
+final class zzg extends zzi {
+    private /* synthetic */ InfoWindowAdapter zzirg;
+
+    zzg(GoogleMap googleMap, InfoWindowAdapter infoWindowAdapter) {
+        this.zzirg = infoWindowAdapter;
     }
 
-    public final /* synthetic */ Object[] newArray(int i) {
-        return new MapStyleOptions[i];
+    public final IObjectWrapper zzh(zzp com_google_android_gms_maps_model_internal_zzp) {
+        return zzn.zzz(this.zzirg.getInfoWindow(new Marker(com_google_android_gms_maps_model_internal_zzp)));
+    }
+
+    public final IObjectWrapper zzi(zzp com_google_android_gms_maps_model_internal_zzp) {
+        return zzn.zzz(this.zzirg.getInfoContents(new Marker(com_google_android_gms_maps_model_internal_zzp)));
     }
 }

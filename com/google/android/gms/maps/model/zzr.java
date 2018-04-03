@@ -1,21 +1,24 @@
-package com.google.android.gms.maps.model;
+package com.google.android.gms.maps;
 
+import android.graphics.Bitmap;
 import android.os.RemoteException;
-import com.google.android.gms.maps.model.internal.zzz;
+import com.google.android.gms.dynamic.IObjectWrapper;
+import com.google.android.gms.dynamic.zzn;
+import com.google.android.gms.maps.GoogleMap.SnapshotReadyCallback;
+import com.google.android.gms.maps.internal.zzbt;
 
-final class zzr implements TileProvider {
-    private final zzz zziwc = this.zziwd.zzivz;
-    private /* synthetic */ TileOverlayOptions zziwd;
+final class zzr extends zzbt {
+    private /* synthetic */ SnapshotReadyCallback zzirr;
 
-    zzr(TileOverlayOptions tileOverlayOptions) {
-        this.zziwd = tileOverlayOptions;
+    zzr(GoogleMap googleMap, SnapshotReadyCallback snapshotReadyCallback) {
+        this.zzirr = snapshotReadyCallback;
     }
 
-    public final Tile getTile(int i, int i2, int i3) {
-        try {
-            return this.zziwc.getTile(i, i2, i3);
-        } catch (RemoteException e) {
-            return null;
-        }
+    public final void onSnapshotReady(Bitmap bitmap) throws RemoteException {
+        this.zzirr.onSnapshotReady(bitmap);
+    }
+
+    public final void zzz(IObjectWrapper iObjectWrapper) throws RemoteException {
+        this.zzirr.onSnapshotReady((Bitmap) zzn.zzx(iObjectWrapper));
     }
 }

@@ -1,15 +1,18 @@
-package com.google.android.gms.maps.model;
+package com.google.android.gms.maps;
 
-import com.google.android.gms.maps.model.internal.zzaa;
+import android.os.RemoteException;
+import com.google.android.gms.maps.GoogleMap.OnPoiClickListener;
+import com.google.android.gms.maps.internal.zzbc;
+import com.google.android.gms.maps.model.PointOfInterest;
 
-final class zzs extends zzaa {
-    private /* synthetic */ TileProvider zziwe;
+final class zzs extends zzbc {
+    private /* synthetic */ OnPoiClickListener zzirs;
 
-    zzs(TileOverlayOptions tileOverlayOptions, TileProvider tileProvider) {
-        this.zziwe = tileProvider;
+    zzs(GoogleMap googleMap, OnPoiClickListener onPoiClickListener) {
+        this.zzirs = onPoiClickListener;
     }
 
-    public final Tile getTile(int i, int i2, int i3) {
-        return this.zziwe.getTile(i, i2, i3);
+    public final void zza(PointOfInterest pointOfInterest) throws RemoteException {
+        this.zzirs.onPoiClick(pointOfInterest);
     }
 }

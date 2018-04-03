@@ -1,34 +1,18 @@
-package com.google.android.gms.maps.model;
+package com.google.android.gms.maps;
 
-import android.os.Parcel;
-import android.os.Parcelable.Creator;
-import android.support.v4.internal.view.SupportMenu;
-import com.google.android.gms.internal.zzbfn;
+import com.google.android.gms.maps.GoogleMap.OnPolygonClickListener;
+import com.google.android.gms.maps.internal.zzbe;
+import com.google.android.gms.maps.model.Polygon;
+import com.google.android.gms.maps.model.internal.zzs;
 
-public final class zzp implements Creator<StreetViewPanoramaOrientation> {
-    public final /* synthetic */ Object createFromParcel(Parcel parcel) {
-        float f = 0.0f;
-        int zzd = zzbfn.zzd(parcel);
-        float f2 = 0.0f;
-        while (parcel.dataPosition() < zzd) {
-            int readInt = parcel.readInt();
-            switch (SupportMenu.USER_MASK & readInt) {
-                case 2:
-                    f2 = zzbfn.zzl(parcel, readInt);
-                    break;
-                case 3:
-                    f = zzbfn.zzl(parcel, readInt);
-                    break;
-                default:
-                    zzbfn.zzb(parcel, readInt);
-                    break;
-            }
-        }
-        zzbfn.zzaf(parcel, zzd);
-        return new StreetViewPanoramaOrientation(f2, f);
+final class zzp extends zzbe {
+    private /* synthetic */ OnPolygonClickListener zzirp;
+
+    zzp(GoogleMap googleMap, OnPolygonClickListener onPolygonClickListener) {
+        this.zzirp = onPolygonClickListener;
     }
 
-    public final /* synthetic */ Object[] newArray(int i) {
-        return new StreetViewPanoramaOrientation[i];
+    public final void zza(zzs com_google_android_gms_maps_model_internal_zzs) {
+        this.zzirp.onPolygonClick(new Polygon(com_google_android_gms_maps_model_internal_zzs));
     }
 }

@@ -1,38 +1,18 @@
-package com.google.android.gms.maps.model;
+package com.google.android.gms.maps;
 
-import android.os.Parcel;
-import android.os.Parcelable.Creator;
-import android.support.v4.internal.view.SupportMenu;
-import com.google.android.gms.internal.zzbfn;
+import com.google.android.gms.maps.GoogleMap.OnPolylineClickListener;
+import com.google.android.gms.maps.internal.zzbg;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.internal.IPolylineDelegate;
 
-public final class zzq implements Creator<Tile> {
-    public final /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int i = 0;
-        int zzd = zzbfn.zzd(parcel);
-        byte[] bArr = null;
-        int i2 = 0;
-        while (parcel.dataPosition() < zzd) {
-            int readInt = parcel.readInt();
-            switch (SupportMenu.USER_MASK & readInt) {
-                case 2:
-                    i2 = zzbfn.zzg(parcel, readInt);
-                    break;
-                case 3:
-                    i = zzbfn.zzg(parcel, readInt);
-                    break;
-                case 4:
-                    bArr = zzbfn.zzt(parcel, readInt);
-                    break;
-                default:
-                    zzbfn.zzb(parcel, readInt);
-                    break;
-            }
-        }
-        zzbfn.zzaf(parcel, zzd);
-        return new Tile(i2, i, bArr);
+final class zzq extends zzbg {
+    private /* synthetic */ OnPolylineClickListener zzirq;
+
+    zzq(GoogleMap googleMap, OnPolylineClickListener onPolylineClickListener) {
+        this.zzirq = onPolylineClickListener;
     }
 
-    public final /* synthetic */ Object[] newArray(int i) {
-        return new Tile[i];
+    public final void zza(IPolylineDelegate iPolylineDelegate) {
+        this.zzirq.onPolylineClick(new Polyline(iPolylineDelegate));
     }
 }

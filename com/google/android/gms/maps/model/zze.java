@@ -1,34 +1,18 @@
-package com.google.android.gms.maps.model;
+package com.google.android.gms.maps;
 
-import android.os.Parcel;
-import android.os.Parcelable.Creator;
-import android.support.v4.internal.view.SupportMenu;
-import com.google.android.gms.internal.zzbfn;
+import com.google.android.gms.maps.GoogleMap.OnInfoWindowLongClickListener;
+import com.google.android.gms.maps.internal.zzag;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.internal.zzp;
 
-public final class zze implements Creator<LatLngBounds> {
-    public final /* synthetic */ Object createFromParcel(Parcel parcel) {
-        int zzd = zzbfn.zzd(parcel);
-        LatLng latLng = null;
-        LatLng latLng2 = null;
-        while (parcel.dataPosition() < zzd) {
-            int readInt = parcel.readInt();
-            switch (SupportMenu.USER_MASK & readInt) {
-                case 2:
-                    latLng2 = (LatLng) zzbfn.zza(parcel, readInt, LatLng.CREATOR);
-                    break;
-                case 3:
-                    latLng = (LatLng) zzbfn.zza(parcel, readInt, LatLng.CREATOR);
-                    break;
-                default:
-                    zzbfn.zzb(parcel, readInt);
-                    break;
-            }
-        }
-        zzbfn.zzaf(parcel, zzd);
-        return new LatLngBounds(latLng2, latLng);
+final class zze extends zzag {
+    private /* synthetic */ OnInfoWindowLongClickListener zzire;
+
+    zze(GoogleMap googleMap, OnInfoWindowLongClickListener onInfoWindowLongClickListener) {
+        this.zzire = onInfoWindowLongClickListener;
     }
 
-    public final /* synthetic */ Object[] newArray(int i) {
-        return new LatLngBounds[i];
+    public final void zzf(zzp com_google_android_gms_maps_model_internal_zzp) {
+        this.zzire.onInfoWindowLongClick(new Marker(com_google_android_gms_maps_model_internal_zzp));
     }
 }
