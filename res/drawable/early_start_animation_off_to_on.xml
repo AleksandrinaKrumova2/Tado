@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/$early_start_animation_off_to_on__0">
+    <target android:name="path_36" android:animation="@drawable/$early_start_animation_off_to_on__1" />
+    <target android:name="path_43" android:animation="@drawable/$early_start_animation_off_to_on__2" />
+    <target android:name="path_45" android:animation="@drawable/$early_start_animation_off_to_on__3" />
+    <target android:name="path_46" android:animation="@drawable/$early_start_animation_off_to_on__4" />
+    <target android:name="group_14" android:animation="@drawable/$early_start_animation_off_to_on__5" />
+</animated-vector>

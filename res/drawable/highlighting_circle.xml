@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <gradient android:startColor="@color/cooling_installation_process_highlight_color" android:endColor="#002998d6" android:type="radial" android:gradientRadius="50%p" />
+    <size android:height="8dp" android:width="8dp" />
+</shape>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00000" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00001" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00002" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00003" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00004" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00005" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00006" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00007" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00008" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00009" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00010" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00011" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00012" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00013" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00014" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00015" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00016" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00017" />
+    <item android:duration="50" android:drawable="@drawable/animation_tinder_00018" />
+</animation-list>
