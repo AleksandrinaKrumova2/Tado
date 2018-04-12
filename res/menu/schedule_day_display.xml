@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/times_one_day" android:title="@string/smartSchedule_home_oneDayScheduleLabel" />
+    <item android:id="@+id/times_three_day" android:title="@string/smartSchedule_home_threeDayScheduleLabel" />
+    <item android:id="@+id/times_seven_day" android:title="@string/smartSchedule_home_sevenDayScheduleLabel" />
+</menu>

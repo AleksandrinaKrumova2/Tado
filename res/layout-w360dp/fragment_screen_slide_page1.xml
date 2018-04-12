@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:id="@id/content" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/background_main" n1:scaleType="centerCrop" n1:contentDescription="@string/imageview" />
+    <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/number50dp" n1:src="@drawable/loading_logo" n1:layout_centerHorizontal="true" />
+    <RelativeLayout n1:id="@id/text1" n1:visibility="invisible" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/number10dp" n1:layout_marginRight="@dimen/number10dp" n1:layout_above="@id/linearLayout1" n1:layout_centerHorizontal="true">
+        <ImageView n1:id="@id/leaf" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/leaf" n1:layout_centerHorizontal="true" />
+        <TextView n1:textSize="@dimen/text_title_size" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/promo_1_1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/number10dp" n1:text="@string/appLandingScreens_genericMoodScreen_title" n1:layout_below="@id/leaf" n1:layout_centerHorizontal="true" />
+        <TextView n1:textSize="@dimen/text_notifications_size" n1:textColor="@android:color/white" n1:gravity="center" n1:id="@id/promo_1_2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="@dimen/number10dp" n1:layout_marginBottom="@dimen/number15dp" n1:text="@string/appLandingScreens_genericMoodScreen_message" n1:layout_below="@id/promo_1_1" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/linearLayout1" n1:padding="@dimen/number5dp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/number5dp" n1:layout_above="@id/linear2" n1:layout_centerHorizontal="true">
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/number5dp" n1:layout_marginRight="@dimen/number5dp" n1:src="@drawable/circle_white" n1:contentDescription="@string/imageview" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/number5dp" n1:layout_marginRight="@dimen/number5dp" n1:src="@drawable/circle_transparent" n1:contentDescription="@string/imageview" />
+        <ImageView n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/number5dp" n1:layout_marginRight="@dimen/number5dp" n1:src="@drawable/circle_transparent" n1:contentDescription="@string/imageview" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/linear2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/number10dp" n1:layout_alignParentBottom="true" n1:layout_centerHorizontal="true">
+        <Button n1:textColor="#ff333333" n1:background="@xml/white_button" n1:paddingLeft="@dimen/number15dp" n1:paddingTop="@dimen/number10dp" n1:paddingRight="@dimen/number15dp" n1:paddingBottom="@dimen/number10dp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/number10dp" n1:text="@string/appLandingScreens_genericMoodScreen_createAccountButton" n1:onClick="createAccount" n1:textAllCaps="true" />
+        <Button n1:textColor="@color/white" n1:background="@xml/installation_button" n1:paddingLeft="@dimen/number15dp" n1:paddingTop="@dimen/number10dp" n1:paddingRight="@dimen/number15dp" n1:paddingBottom="@dimen/number10dp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_margin="@dimen/number10dp" n1:text="@string/appLandingScreens_genericMoodScreen_signInButton" n1:onClick="logIn" n1:textAllCaps="true" />
+    </LinearLayout>
+</RelativeLayout>
