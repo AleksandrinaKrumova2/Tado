@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/login_background" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+        <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/premium_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="@dimen/number35dp" android:src="@drawable/premium_logo" android:contentDescription="premium" />
+            <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/number25dp" android:src="@drawable/ic_upselling_automatic" />
+            <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/upselling_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/number15dp" android:layout_marginTop="@dimen/number25dp" android:layout_marginRight="@dimen/number15dp" android:text="@string/premiumUpgrade_upsellingScreens_manualControl_description" style="@style/premium_upselling_description_text" />
+            <android.support.v7.widget.AppCompatButton android:id="@+id/learn_more_button" android:layout_width="match_parent" android:layout_marginTop="@dimen/number25dp" android:text="@string/premiumUpgrade_upsellingScreens_learnMoreButton" android:backgroundTint="#346a71" style="@style/premium_button" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

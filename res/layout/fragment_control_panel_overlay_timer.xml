@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <RelativeLayout android:id="@+id/control_panel_buttons" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3201">
+        <ImageButton android:id="@+id/timer_overlay_back_button" android:padding="8dp" android:layout_width="UNKNOWN_DATA_0x3c01" android:layout_height="match_parent" android:src="@drawable/ic_arrow_back_black_24dp" android:layout_alignParentLeft="true" style="@style/flatButtonStyle_controlPanel" />
+        <TextView android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/components_terminationConditionSelector_timerLabel" android:layout_centerInParent="true" android:textAllCaps="true" />
+        <Button android:id="@+id/timer_overlay_reset_button" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/components_terminationConditionSelector_resetButton" android:layout_alignParentRight="true" style="@style/flatButtonStyle_controlPanel" />
+        <Button android:textSize="@dimen/button_control_panel" android:textColor="@color/manual_control_start_button_color" android:id="@+id/timer_start_button" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/manualControl_startButton" android:layout_alignParentRight="true" android:onClick="onApplyClick" style="@style/flatButtonStyle_controlPanel" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="@color/control_panel_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/control_panel_buttons">
+        <com.tado.android.views.TimerView android:id="@+id/control_panel_timer_edit_mode" android:background="@color/control_panel_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1.0" />
+        <FrameLayout android:id="@+id/control_panel_timer_running_mode" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.tado.android.control_panel.CircleView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/control_panel_timer_running_mode_circle" android:layout_width="UNKNOWN_DATA_0xfa01" android:layout_height="UNKNOWN_DATA_0xfa01" />
+            <TextView android:textSize="60sp" android:textColor="@color/timer_text_color" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/control_panel_timer_running_mode_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/banner_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/heating_bottom" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@+id/banner_left" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/heating_home_left" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@+id/banner_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/heating_home_right" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/banner_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/banner_right" android:layout_toRightOf="@+id/banner_left" android:layout_centerInParent="true" />
+</merge>

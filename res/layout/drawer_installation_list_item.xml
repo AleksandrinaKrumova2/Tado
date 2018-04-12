@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/drawer_installation_item_layout" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f070106">
+    <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+        <ImageView android:id="@+id/drawer_installation_item_icon" android:layout_width="UNKNOWN_DATA_0x1b01" android:layout_height="UNKNOWN_DATA_0x1b01" android:layout_marginLeft="16dp" android:layout_marginRight="8dp" android:src="@drawable/ic_pause" />
+        <TextView android:id="@+id/drawer_installation_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ZoneItemTextView" />
+    </LinearLayout>
+    <View android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="@drawable/line_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" />
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="28sp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/assign_zone_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/installation_assignZone_title" />
+        <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/assign_zone_image" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0xa001" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:src="@drawable/srt_assign_zone" android:scaleType="fitCenter" />
+        <RadioGroup android:id="@+id/assign_zone_radio_group" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/control_panel_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x100" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" />
+        <Button android:textColor="@color/manual_control_start_button_color" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/assign_zone_create_new_zone_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/components_zoneSelection_newZoneLabel" android:drawablePadding="8dp" style="@style/Widget.AppCompat.Button.Borderless" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/installation_assignZone_helpMessage" />
+        <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:id="@+id/assign_zone_accept_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_zoneSettings_devices_assignDevice_selectButton" style="@style/installation_process_button" />
+    </LinearLayout>
+</ScrollView>

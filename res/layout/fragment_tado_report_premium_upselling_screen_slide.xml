@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent"
+    <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:background="#0000" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginLeft="100dp" android:layout_marginRight="100dp" android:text="" android:onClick="onDateClick" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent"
+                <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="3.0">
+                    <ImageView android:id="@+id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/premium_climate_report" />
+                </LinearLayout>
+                <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:paddingRight="@dimen/number15dp" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="4.0">
+                    <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/number8dp" android:src="@drawable/premium_logo" />
+                    <TextView android:textSize="16sp" android:textColor="#505050" android:padding="3dp" android:layout_width="UNKNOWN_DATA_0x7f0700d2" android:layout_height="wrap_content" android:layout_marginTop="@dimen/number10dp" android:text="@string/premiumUpgrade_climateReport_upgradeMessage" />
+                    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="@dimen/number20dp" android:layout_marginRight="3dp" android:text="@string/premiumUpgrade_climateReport_learnMoreButton" android:onClick="onPremiumLearnMoreClick" style="@style/premium_report_button" />
+                    <TextView android:textSize="12sp" android:padding="3dp" android:layout_width="UNKNOWN_DATA_0x7f0700d2" android:layout_height="wrap_content" android:layout_marginTop="@dimen/number8dp" android:layout_marginBottom="@dimen/number8dp" android:text="@string/premiumUpgrade_climateReport_additionalDescription" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

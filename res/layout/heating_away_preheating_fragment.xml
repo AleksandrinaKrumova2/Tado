@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="@string/smartSchedule_away_heating_preheatingLabel" android:textAllCaps="true" />
+    <SeekBar android:id="@+id/away_configuration_comfort_settings_slider" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:max="3" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+        <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/away_configuration_comfort_off_text_view" android:text="@string/smartSchedule_away_heating_preheatingLevels_offLabel" style="@style/AwaySliderLabel" />
+        <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/away_configuration_comfort_eco_text_view" android:paddingLeft="16dp" android:text="@string/smartSchedule_away_heating_preheatingLevels_ecoLabel" style="@style/AwaySliderLabel" />
+        <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/away_configuration_comfort_balanced_text_view" android:text="@string/smartSchedule_away_heating_preheatingLevels_balanceLabel" style="@style/AwaySliderLabel" />
+        <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/away_configuration_comfort_comfort_text_view" android:text="@string/smartSchedule_away_heating_preheatingLevels_comfortLabel" style="@style/AwaySliderLabel" />
+    </LinearLayout>
+    <com.tado.android.times.view.AwayCirclesView android:id="@+id/away_circles_view" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3c01" android:layout_marginTop="16dp" />
+    <TextView android:textColor="@color/edit_time_selector_color" android:id="@+id/away_configuration_comfort_settings_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin" android:layout_marginTop="32dp" android:text="@string/smartSchedule_away_heating_balanceDescription" android:singleLine="false" style="@style/bodyStyle1" />
+</LinearLayout>

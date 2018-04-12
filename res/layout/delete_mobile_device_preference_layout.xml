@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/red_button_color_state" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="0x1020016" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/flatButtonStyle_controlPanel" />

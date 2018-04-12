@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="0dp" android:paddingRight="0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_bar_template" />
+    <EditText android:id="@+id/inputSearch" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:hint="@string/installation_sacc_acSpecs_brandSelection_brandSearch_searchField" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|numberPassword|phone|date" />
+    <ListView android:id="0x102000a" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:layout_weight="1.0" />
+    <TextView android:id="0x1020004" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8dp" android:text="@string/installation_sacc_acSpecs_brandSelection_brandSearch_errors_noBrandFoundError" />
+</LinearLayout>

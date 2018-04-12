@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp">
+        <ProgressBar android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/device_property_panel_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateBehavior="cycle" style="@style/Base.Widget.AppCompat.ProgressBar" />
+        <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/device_property_panel_image" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_check_mark" />
+    </FrameLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/white" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/device_property_panel_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:layout_toRightOf="@+id/device_property_panel_progress" />
+</merge>

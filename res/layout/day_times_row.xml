@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/times_block_title_text_size" android:id="@+id/day_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/times_block_container_padding" android:layout_marginTop="@dimen/times_block_container_padding" android:layout_marginRight="@dimen/times_block_container_padding" />
+    <com.tado.android.times.view.TimeBlocksView2 android:id="@+id/day_blocks" android:paddingLeft="@dimen/times_block_container_padding" android:paddingRight="@dimen/times_block_container_padding" android:paddingBottom="@dimen/times_block_container_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:background="@color/list_settings_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0700f0" />
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@color/premium_button_background" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201">
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/drawer_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/menu_upgradeToPremiumButton" android:drawableLeft="@drawable/premium_donut" android:drawablePadding="8dp" />
+</LinearLayout>

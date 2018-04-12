@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:id="@+id/generic_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="Text" />
+        <RelativeLayout android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/center" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x1" android:layout_centerHorizontal="true" />
+            <include android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-32dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:layout_below="@+id/textview" android:layout_alignLeft="@id/center" android:layout_alignParentLeft="false" android:layout_alignParentRight="false" android:layout_centerHorizontal="true" layout="@layout/image_template_single_nomargin" />
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:id="@+id/ac_mode_layout" android:background="@drawable/big_remote" android:paddingLeft="48dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64dp" android:layout_marginRight="-32dp" android:layout_below="@+id/textview" android:layout_alignRight="@id/center"
+                <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/ac_mode_mode_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp">
+                    <ImageView android:id="@+id/mode_icon_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/ic_ac_mode_cool_gray" />
+                    <TextView android:id="@+id/mode_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="Cool" />
+                </LinearLayout>
+                <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/ac_mode_temp_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp">
+                    <ImageView android:id="@+id/temperature_icon_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/control_panel_temp" />
+                    <TextView android:id="@+id/temperature_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="16°" />
+                </LinearLayout>
+                <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/ac_mode_fan_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp">
+                    <ImageView android:id="@+id/fan_speed_icon_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/ic_fan_speed_icon" />
+                    <TextView android:id="@+id/fan_speed_auto_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@string/mode_auto" android:textAllCaps="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/ac_mode_swing_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp">
+                    <ImageView android:id="@+id/swing_icon_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/control_panel_swing" />
+                    <TextView android:id="@+id/swing_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0dp" android:text="ON" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

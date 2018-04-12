@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@color/material_blue_grey_800" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x201" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:id="@+id/generic_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="Text" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="Details" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:id="@+id/generic_error_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="Date" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:id="@+id/generic_error_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="Url" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:id="@+id/generic_error_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="Status" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:id="@+id/generic_error_response_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="Response data" />
+    </LinearLayout>
+</ScrollView>

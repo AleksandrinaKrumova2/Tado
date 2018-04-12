@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <RelativeLayout android:id="@+id/list_overlay_buttons" android:background="@color/white" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3201">
+        <ImageButton android:id="@+id/list_overlay_back_button" android:padding="8dp" android:layout_width="UNKNOWN_DATA_0x3c01" android:layout_height="match_parent" android:src="@drawable/ic_arrow_back_black_24dp" android:layout_alignParentLeft="true" style="@style/flatButtonStyle_controlPanel" />
+        <TextView android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/components_terminationConditionSelector_durationLabel" android:layout_centerInParent="true" android:textAllCaps="true" />
+        <Button android:textSize="@dimen/button_control_panel" android:textColor="@color/manual_control_start_button_color" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/manualControl_startButton" android:layout_alignParentRight="true" android:onClick="onApplyClick" style="@style/flatButtonStyle_controlPanel" />
+    </RelativeLayout>
+    <ListView android:id="@+id/overlay_termination_list_view" android:background="@color/control_panel_background" android:padding="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:choiceMode="singleChoice" android:layout_below="@+id/list_overlay_buttons" />
+    <View android:id="@+id/list_overlay_line" android:background="@color/control_panel_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_below="@+id/overlay_termination_list_view" />
+    <View android:background="@color/white" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_below="@+id/list_overlay_line" />
+</RelativeLayout>

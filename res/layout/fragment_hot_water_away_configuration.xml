@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tado.android.times.view.CommunicationView android:id="@+id/communication_area" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@+id/away_configuration_fixed_away_temperature_button" android:background="?attr/selectableItemBackground" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001">
+                <TextView android:textColor="@color/black" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="@string/smartSchedule_away_settingsTitle" android:layout_weight="1.0" />
+                <TextView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textview_away_temperature_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4dp" />
+                <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right_black_24dp" android:alpha="0.5" />
+            </LinearLayout>
+            <TextView android:id="@+id/away_temperature_description" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/smartSchedule_away_settingsDescription" />
+        </LinearLayout>
+    </ScrollView>
+    <com.tado.android.views.progressbar.ProgressBarComponent android:id="@id/progressBar" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-8dp" android:layout_marginBottom="-8dp" android:indeterminate="true" android:indeterminateBehavior="cycle" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+</FrameLayout>

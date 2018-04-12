@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@+id/create_account_terms_and_conditions_link" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/createUserAccount_goToLegalInfoPrompt_generalTermsAndConditionsButton" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:id="@+id/create_account_privacy_policy_link" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/createUserAccount_goToLegalInfoPrompt_privacyPolicyButton" />
+    </LinearLayout>
+</ScrollView>
