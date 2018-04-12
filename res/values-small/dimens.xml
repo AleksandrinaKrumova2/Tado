@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_state_temperature_screen_degree_size">35.0dip</dimen>
+    <dimen name="text_state_temperature_screen_digits_size">15.0dip</dimen>
+    <dimen name="text_state_temperature_screen_dot_size">15.0dip</dimen>
+    <dimen name="text_state_temperature_screen_size">46.0dip</dimen>
+</resources>

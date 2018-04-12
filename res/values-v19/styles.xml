@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BarcodeCamera" parent="@style/Theme.InstallCoolingTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="Theme.Promo" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/gradient_orange</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="Theme.Splash" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/gradient_orange</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

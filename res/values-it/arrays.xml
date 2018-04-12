@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="building_types">
+        <item>Edificio tradizionale</item>
+        <item>Casa a basso consumo energetico</item>
+        <item>Casa passiva</item>
+    </array>
+    <array name="currency">
+        <item>AUD</item>
+        <item>BGN</item>
+        <item>BYR</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>CNY</item>
+        <item>CZK</item>
+        <item>DKK</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>GEL</item>
+        <item>HUF</item>
+        <item>LTL</item>
+        <item>LVL</item>
+        <item>MDL</item>
+        <item>SEK</item>
+        <item>UAH</item>
+        <item>USD</item>
+    </array>
+    <array name="months">
+        <item>Gennaio</item>
+        <item>Febbraio</item>
+        <item>Marzo</item>
+        <item>Aprile</item>
+        <item>Maggio</item>
+        <item>Giugno</item>
+        <item>Luglio</item>
+        <item>Agosto</item>
+        <item>Settembre</item>
+        <item>Ottobre</item>
+        <item>Novembre</item>
+        <item>Dicembre</item>
+    </array>
+</resources>

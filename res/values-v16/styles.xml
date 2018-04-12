@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AwaySliderLabel">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/edit_time_selector_color</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+    </style>
+    <style name="HvacSrtInstallationTextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffadadad</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+    </style>
+    <style name="Preference_TextAppearanceMaterialBody2">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="Preference_TextAppearanceMaterialSubhead">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Tooltip" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="controlPanelTimerKeys">
+        <item name="android:textSize">32.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:layout_margin">16.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="mdtp_day_of_week_label_condensed">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="power_switch_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/edit_time_selector_color</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginBottom">8.0dip</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+    </style>
+    <style name="subheadTextStyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/edit_time_selector_color</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+    </style>
+    <style name="user_radar_tooltip_list_item_name_text_style">
+        <item name="android:textSize">@dimen/user_radar_tooltip_list_item_name_text_size</item>
+        <item name="android:textColor">@color/cooling_tooltip_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+    </style>
+    <style name="user_radar_tooltip_list_item_subtitle">
+        <item name="android:textSize">@dimen/user_radar_tooltip_list_item_subtitle_size</item>
+        <item name="android:textColor">@color/cooling_tooltip_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">sans-serif-regular</item>
+    </style>
+    <style name="mdtp_done_button_light">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="mdtp_time_label_thin">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>
