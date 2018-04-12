@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/user_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:src="@drawable/cooling_radar_one_person" />
+        <TextView android:textSize="14sp" android:textColor="0x106000b" android:ellipsize="end" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/user_name" android:layout_width="UNKNOWN_DATA_0x3001" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@+id/user_icon" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/user_image_clickable" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/user_circle" android:visibility="invisible" android:layout_width="UNKNOWN_DATA_0x3001" android:layout_height="UNKNOWN_DATA_0x3001" android:src="@drawable/user_circle" android:scaleType="fitCenter" />
+    </RelativeLayout>
+</RelativeLayout>

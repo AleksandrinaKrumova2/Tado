@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:background="@color/control_panel_background" android:weightSum="1.0">
+    <RelativeLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.tado.android.views.TimeTextView android:id="@+id/timerTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0000" android:digitsStyle="@style/controlPanelDigits" android:hourSeparator="h" android:minutesSeparator="m" android:numSpaces="5" android:separatorStyle="@style/controlPanelSeparators" style="@style/controlPanelTimer" />
+        <ImageView android:id="@+id/control_panel_timer_delete" android:background="@drawable/timer_background" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/ic_backspace_black_24dp" android:layout_toRightOf="@+id/timerTextView" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/ac_home" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" />
+    <TableLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:stretchColumns="true">
+        <TableRow android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/control_panel_timer_key_one" android:tag="1" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="1" style="@style/controlPanelTimerKeys" />
+            <TextView android:id="@+id/control_panel_timer_key_two" android:tag="2" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="2" style="@style/controlPanelTimerKeys" />
+            <TextView android:id="@+id/control_panel_timer_key_three" android:tag="3" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="3" style="@style/controlPanelTimerKeys" />
+        </TableRow>
+        <TableRow android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/control_panel_timer_key_four" android:tag="4" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="4" style="@style/controlPanelTimerKeys" />
+            <TextView android:id="@+id/control_panel_timer_key_five" android:tag="5" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="5" style="@style/controlPanelTimerKeys" />
+            <TextView android:id="@+id/control_panel_timer_key_six" android:tag="6" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="6" style="@style/controlPanelTimerKeys" />
+        </TableRow>
+        <TableRow android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/control_panel_timer_key_seven" android:tag="7" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="7" style="@style/controlPanelTimerKeys" />
+            <TextView android:id="@+id/control_panel_timer_key_eight" android:tag="8" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="8" style="@style/controlPanelTimerKeys" />
+            <TextView android:id="@+id/control_panel_timer_key_nine" android:tag="9" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="9" style="@style/controlPanelTimerKeys" />
+        </TableRow>
+        <TableRow android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:background="0x0" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" style="@style/controlPanelTimerKeys" />
+            <TextView android:id="@+id/control_panel_timer_key_zero" android:tag="0" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="0" style="@style/controlPanelTimerKeys" />
+            <TextView android:background="0x0" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" style="@style/controlPanelTimerKeys" />
+        </TableRow>
+    </TableLayout>
+</merge>
