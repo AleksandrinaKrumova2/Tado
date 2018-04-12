@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1500409030" android:versionName="4.9.3" package="com.tado">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="27" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:glEsVersion="20000" android:required="true" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.tado.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="com.tado.permission.C2D_MESSAGE" />
+    <application android:theme="@style/Theme_NoTitle" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.tado.android.app.TadoApplication" android:allowBackup="false" android:hardwareAccelerated="true" android:supportsRtl="false" android:roundIcon="@mipmap/ic_launcher_round">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_api_key" />
+        <meta-data android:name="com.google.android.geo.SERVER_KEY" android:value="AIzaSyAbcCmq9FmkSE5k3o2xuszuQqxYTjBkRXo" />
+        <meta-data android:name="io.fabric.ApiKey" android:value="893b8d531f7e50c4fc1e311e5ecf5917217b71c3" />
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode" />
+        <activity android:theme="@style/Theme_Splash" android:label="@string/app_name" android:name="com.tado.android.SplashScreenActivity" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="my.tado.com" android:pathPrefix="/invitation" />
+                <data android:scheme="https" android:host="my.tado.com" android:pathPrefix="/invitation" />
+                <data android:scheme="http" android:host="my.tado.com" android:pathPrefix="/premium-upgrade" />
+                <data android:scheme="https" android:host="my.tado.com" android:pathPrefix="/premium-upgrade" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="cidevelop.tado.com" android:pathPrefix="/invitation" />
+                <data android:scheme="https" android:host="cidevelop.tado.com" android:pathPrefix="/invitation" />
+                <data android:scheme="http" android:host="cidevelop.tado.com" android:pathPrefix="/premium-upgrade" />
+                <data android:scheme="https" android:host="cidevelop.tado.com" android:pathPrefix="/premium-upgrade" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tado" android:pathPattern="zones/.*" />
+                <data android:scheme="tado" android:pathPattern="zones/.*/.*" />
+                <data android:scheme="tado" android:pathPattern="settings/.*" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme_Promo" android:label="@string/app_name" android:name="com.tado.android.PromoActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme_InstallTheme" android:name="com.tado.android.login.LoginActivity" android:screenOrientation="portrait" android:noHistory="true" />
+        <activity android:theme="@style/Theme_InstallTheme" android:name="com.tado.android.ManageUsersActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.mainsettings.SettingsActivity2" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.manualcontrolsettings.ManualControlSettingsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.zonesettings.ZonePreferenceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.appsettings.AppSettingsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MyTheme" android:label="@string/title_activity_temperature_and_times" android:name="com.tado.android.times.SmartScheduleActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MyTheme" android:label="@string/title_activity_edit_times_day" android:name="com.tado.android.times.EditTimesDayActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallTheme" android:label="@string/title_activity_create_account" android:name="com.tado.android.installation.CreateAccountActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:label="@string/title_activity_choose_product_acitivity" android:name="com.tado.android.installation.ChooseProductActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.InstallHeatingOverviewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.InstallEkOverviewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallSrtTheme" android:name="com.tado.android.installation.InstallInternetBridgeReplacementActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.registerwr.InstallCoolingOverviewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.RegisterLocationActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.registerwr.RegisterDeviceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.connectwifi.PlugInDeviceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.connectwifi.ConnectToDeviceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.connectwifi.SelectWifiNetworkActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.connectwifi.WaitForServerConnectionActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.connectwifi.DeviceConnectionSuccessfulActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.connectwifi.TroubleshootDeviceConnectionActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.connectwifi.UpdateFirmwareActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.connectwifi.UpdateFirmwareSuccessfulActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.SelectManufacturerActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.ListManufacturerActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.PointToACActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.TestingCommandSetsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:label="@string/title_activity_command_set_update" android:name="com.tado.android.installation.acsetup.CommandSetUpdateActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.CommandSetUpdateTroubleshootingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:label="@string/title_activity_acsetup_successful" android:name="com.tado.android.installation.acsetup.ACSetupSuccessfulActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.clc.ThermostaticOperationIntroActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.clc.TeachSmartACActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.clc.RecordHeatModeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:label="@string/title_activity_device_position" android:name="com.tado.android.installation.positioning.DevicePositionActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:label="@string/title_activity_device_position_connection" android:name="com.tado.android.installation.positioning.DevicePositionConnectionActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:label="@string/title_activity_congratulations" android:name="com.tado.android.installation.CongratulationsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallTheme" android:label="@string/title_activity_create_home_welcome" android:name="com.tado.android.installation.CreateHomeWelcomeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallTheme" android:name="com.tado.android.installation.CreateHomeChooseNameActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallTheme" android:label="@string/title_activity_create_home_contact_details" android:name="com.tado.android.installation.CreateHomeContactDetailsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyleNormalControl" android:name="com.tado.android.settings.homedetails.HomeDetailsContactDetails" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallTheme" android:label="@string/title_activity_create_home_enter_address" android:name="com.tado.android.installation.CreateHomeEnterAddressActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyleNormalControl" android:name="com.tado.android.settings.homedetails.HomeDetailsEnterAddressActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallTheme" android:name="com.tado.android.installation.ListCountriesActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallTheme" android:label="@string/title_activity_join_home" android:name="com.tado.android.installation.JoinHomeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MainZone" android:name="com.tado.android.MainZoneActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallTheme" android:label="@string/title_activity_install_connector_kit" android:name="com.tado.android.installation.InstallConnectorKitActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.SelectControlTypeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.ChooseTemperatureUnitActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.cooling.AcSetupSettingsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MyTheme" android:name="com.tado.android.settings.cooling.CommandSetSignalSetActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.teaching.SetACToSettingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.teaching.StartTeachingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.TrainYourControlActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.TeachingRunsOverviewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.TeachingModesOverviewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.ModeOptionsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.ChooseMaxTempForModeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.ChooseMinTempForModeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.ChooseAutoFanSpeedForModeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.ChooseFanspeedsForModeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.ComplexRecordKeyCommandActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.ChooseAvailableModesActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.SelectACTypeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.SelectDisplayTypeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.TypeInManufacturerActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.ACFunctionalitiesActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.PointToACActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.TestACSettingCommandsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.complexteaching.TeachSmartACActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.PrePointToAcActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.PreTestingCommandSetsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallTheme" android:name="com.tado.android.location.PermissionFeatureIntroActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.TestConfirmedCommandSetsOverviewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.TestConfirmedCommandSetsNoteActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.TestCommandSetActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.acsetup.TestConfirmedCommandSetListActivity" android:screenOrientation="portrait" android:noHistory="true" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:label="@string/title_activity_beta_access" android:name="com.tado.android.settings.BetaAccessActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:theme="@style/Theme_MyTheme" android:name="com.tado.android.report.ReportActivity" android:screenOrientation="sensorLandscape" />
+        <activity android:theme="@style/Theme_Transparent" android:name="com.tado.android.location.EnableWifiScanningActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.app.ForceUpdateActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.InfoActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.notifications.NotificationPreferenceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MyTheme" android:name="com.tado.android.onboarding.OnboardingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.times.SmartScheduleSettingsActivity" android:screenOrientation="portrait" android:parentActivityName="com.tado.android.times.SmartScheduleActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".android.times.SmartScheduleActivity" />
+        </activity>
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.zonesettings.TemperatureOffsetPreferenceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallCoolingTheme" android:name="com.tado.android.installation.ResetWifiCredentialsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.zonesettings.MeasurementDevicesPreferenceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallSrtTheme" android:name="com.tado.android.installation.srt.common.SrtInstallationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:theme="@style/Theme_BarcodeCamera" android:name="com.tado.android.installation.barcode.BarcodeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.users.PeoplePreferenceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.users.PeopleDetailsPreferenceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.users.MobileDeviceDetailsPreferencesActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.zonesettings.DeviceDetailsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_InstallTheme" android:name="com.tado.android.installation.InvitationReviewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.installation.unfinished.UnfinishedInstallationsActivity" android:screenOrientation="portrait" android:parentActivityName="com.tado.android.MainZoneActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tado.android.MainZoneActivity" />
+        </activity>
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.zonesettings.OpenWindowDetectionPreferenceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.installation.unfinished.UnfinishedInstallationDetailsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.installation.acsetup.RemoteNotSupportedActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.demo.DemoActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.debug.DebugConfigPreferenceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.homedetails.HomeDetailsPreferenceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.locationbasedcontrol.HomeAreaPreferenceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.locationbasedcontrol.homewifi.HomeWifiPreferenceActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.cooling.AcTemperatureRangeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.settings.cooling.AcMinOnOffTimeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MyTheme" android:name="com.tado.android.settings.EnergySavingsActivity" android:screenOrientation="portrait" android:parentActivityName="com.tado.android.MainZoneActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".android.MainZoneActivity" />
+        </activity>
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.repairServices.RepairServicesActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/SettingsActionBarStyle" android:name="com.tado.android.repairServices.RepairServicesWebViewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MyTheme" android:name="com.tado.android.premium.PremiumPaymentActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MyTheme" android:name="com.tado.android.premium.PremiumConfirmationActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MyTheme" android:name="com.tado.android.premium.PremiumCarouselActivity" android:screenOrientation="portrait" android:parentActivityName="com.tado.android.MainZoneActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".android.MainZoneActivity" />
+        </activity>
+        <activity android:theme="@style/Theme_MyTheme" android:name="com.tado.android.premium.AutomaticChangeUpsellingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MyTheme" android:name="com.tado.android.premium.OpenWindowUpsellingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MyTheme" android:name="com.tado.android.premium.SwitchHomeUpsellingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme_MyTheme" android:name="com.tado.android.premium.SwitchAwayUpsellingActivity" android:screenOrientation="portrait" />
+        <receiver android:name="com.tado.android.location.BootReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tado.android.notifications.NotificationReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.tado.DISMISS_FOREVER_INTENT_ACTION" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tado.android.notifications.EnergySavingsReportNotificationReceiver" android:enabled="true" android:exported="false" />
+        <receiver android:name="com.tado.android.location.ConnectivityReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ANY_DATA_STATE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tado.android.location.ChangeAccuracyBroadcastReceiver" android:enabled="true" android:exported="false" />
+        <receiver android:name="com.tado.android.location.CheckLocationServicesReceiver" android:enabled="true" android:exported="false" />
+        <service android:name="com.tado.android.location.LocationPostService" />
+        <service android:name="com.tado.android.location.updates.StandardLocationPostJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true" />
+        <service android:name="com.tado.android.location.updates.FirebaseLocationPostJobService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <service android:name="com.tado.android.location.lifeline.StandardCheckLocationJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true" />
+        <service android:name="com.tado.android.location.lifeline.FirebaseCheckLocationServicesJobService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.tado.android.location.playservices.GeofencingEventBroadcastReceiver" />
+        <receiver android:name="com.tado.android.location.playservices.FusedLocationBroadcastReceiver" />
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false" />
+        <service android:name="com.tado.android.fcm.FCMInstanceService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.tado.android.fcm.FCMService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.crashlytics.android.CrashlyticsInitProvider" android:exported="false" android:authorities="com.tado.crashlyticsinitprovider" android:initOrder="100" />
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" />
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false" />
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false" />
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" />
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.tado" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.tado.firebaseinitprovider" android:initOrder="100" />
+        <service android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
