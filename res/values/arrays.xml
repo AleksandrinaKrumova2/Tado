@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="building_types">
+        <item>Normal Building</item>
+        <item>Low Energy House</item>
+        <item>Zero Energy House</item>
+    </array>
+    <array name="currency">
+        <item>AUD</item>
+        <item>BGN</item>
+        <item>BYR</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>CNY</item>
+        <item>CZK</item>
+        <item>DKK</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>GEL</item>
+        <item>HUF</item>
+        <item>LTL</item>
+        <item>LVL</item>
+        <item>MDL</item>
+        <item>SEK</item>
+        <item>UAH</item>
+        <item>USD</item>
+    </array>
+    <array name="custom_wifi_security">
+        <item>@string/installation_sacc_connectWifi_wifiSetup_wifiCredentials_customWifi_openSecurityLabel</item>
+        <item>@string/installation_sacc_connectWifi_wifiSetup_wifiCredentials_customWifi_wepSecurityLabel</item>
+        <item>@string/installation_sacc_connectWifi_wifiSetup_wifiCredentials_customWifi_wpaSecurityLabel</item>
+        <item>@string/installation_sacc_connectWifi_wifiSetup_wifiCredentials_customWifi_wpa2SecurityLabel</item>
+    </array>
+    <array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+</resources>

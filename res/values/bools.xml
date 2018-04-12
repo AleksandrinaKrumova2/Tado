@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_action_bar_embed_tabs">false</bool>
+    <bool name="abc_allow_stacked_button_bar">false</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="addDevice">true</bool>
+    <bool name="analytics">true</bool>
+    <bool name="beta">false</bool>
+    <bool name="beta_program">true</bool>
+    <bool name="cache">true</bool>
+    <bool name="debugMenu">false</bool>
+    <bool name="demo">true</bool>
+    <bool name="helpCenter">true</bool>
+    <bool name="info">true</bool>
+    <bool name="isTablet">false</bool>
+    <bool name="isTablet">true</bool>
+    <bool name="isTablet">true</bool>
+    <bool name="logger">true</bool>
+    <bool name="onBoarding">true</bool>
+    <bool name="prefillLogin">false</bool>
+    <bool name="rateApp">true</bool>
+    <bool name="rateAppAgain">false</bool>
+    <bool name="referralProgram">true</bool>
+    <bool name="repairServices">true</bool>
+</resources>

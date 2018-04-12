@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="block_view_edit_context_menu">res/menu/block_view_edit_context_menu.xml</menu>
+    <menu name="global">res/menu/global.xml</menu>
+    <menu name="menu_action_fuel_level">res/menu/menu_action_fuel_level.xml</menu>
+    <menu name="menu_action_save">res/menu/menu_action_save.xml</menu>
+    <menu name="menu_action_time_day_overview">res/menu/menu_action_time_day_overview.xml</menu>
+    <menu name="menu_create_home_contact_details">res/menu/menu_create_home_contact_details.xml</menu>
+    <menu name="menu_create_home_welcome">res/menu/menu_create_home_welcome.xml</menu>
+    <menu name="menu_install_connector_kit">res/menu/menu_install_connector_kit.xml</menu>
+    <menu name="menu_install_heating_overview">res/menu/menu_install_heating_overview.xml</menu>
+    <menu name="menu_permission_feature_intro">res/menu/menu_permission_feature_intro.xml</menu>
+    <menu name="menu_register_location">res/menu/menu_register_location.xml</menu>
+    <menu name="menu_smart_schedule">res/menu/menu_smart_schedule.xml</menu>
+    <menu name="menu_srt_installation">res/menu/menu_srt_installation.xml</menu>
+    <menu name="menu_wifi_display">res/menu/menu_wifi_display.xml</menu>
+    <menu name="schedule_day_display">res/menu/schedule_day_display.xml</menu>
+</resources>
