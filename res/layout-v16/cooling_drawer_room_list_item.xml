@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/drawer_zone_list_item_layout" android:background="@color/ac_home" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f070106">
+        <TextView android:id="@+id/drawer_zone_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/ZoneItemTextView" />
+        <RelativeLayout android:id="@+id/drawer_zone_item_temperature_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@+id/drawer_zone_item_no_connection" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x4b01" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_marginBottom="8dp" android:src="@drawable/zone_list_no_connection" />
+            <com.tado.android.views.TadoStateTemperatureView android:id="@+id/drawer_zone_item_tado_state_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:baseTextSize="48dp" android:decimalTextSize="16sp" android:degreeTextSize="48sp" android:dotTextSize="16sp" />
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/drawer_zone_item_mode_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginBottom="10dp" android:drawablePadding="8dp" android:layout_alignBottom="@+id/drawer_zone_item_temperature_layout" android:layout_alignParentRight="true" android:textAllCaps="true" android:fontFamily="sans-serif-regular" />
+    </RelativeLayout>
+    <View android:background="@drawable/line_divider" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_alignParentBottom="true" />
+</LinearLayout>
