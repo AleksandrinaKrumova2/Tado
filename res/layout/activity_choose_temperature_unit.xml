@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_bar_template" />
+        <include android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true" layout="@layout/title_template" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/products" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_below="@id/title" android:layout_centerVertical="true"
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:src="@xml/temperature_unit_celsius_selector" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="chooseCelsius" />
+                <TextView android:textSize="16sp" android:textColor="@xml/cooling_installation_button" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/title_template_textview" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="@string/installation_sacc_acSpecs_temperatureUnit_celsiusLabel" android:layout_centerHorizontal="true" android:onClick="chooseCelsius" android:textAllCaps="true" style="@style/bodyStyle1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:src="@xml/temperature_unit_fahrenheit_selector" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="chooseFahrenheit" />
+                <TextView android:textSize="16sp" android:textColor="@xml/cooling_installation_button" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="@string/installation_sacc_acSpecs_temperatureUnit_fahrenheitLabel" android:layout_centerHorizontal="true" android:onClick="chooseFahrenheit" android:textAllCaps="true" style="@style/bodyStyle1" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

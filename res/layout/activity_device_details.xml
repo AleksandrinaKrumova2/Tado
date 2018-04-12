@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/activity_device_details_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/activity_device_details" android:tag="binding_1" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" />
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body2" android:id="@+id/text_product_name" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:id="@+id/text_serial_number" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:id="@+id/text_firmware" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+        <TextView android:id="@+id/text_description" android:tag="binding_5" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/separator" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/section_battery" android:tag="binding_6" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="@string/settings_zoneSettings_devices_deviceDetails_battery_statusLabel" android:layout_weight="1.0" />
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:id="@+id/battery_status" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:id="@+id/text_battery" android:tag="binding_8" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" />
+        <include layout="@layout/separator" />
+        <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:textColor="@color/ac_home" android:id="@+id/button_identify" android:tag="binding_9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_zoneSettings_devices_deviceDetails_identifyButton" style="@style/Widget.AppCompat.Button.Borderless" />
+        <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:textColor="@color/ac_home" android:id="@+id/button_asign" android:tag="binding_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_zoneSettings_devices_deviceDetails_assignToZoneButton" style="@style/Widget.AppCompat.Button.Borderless" />
+        <Button android:textAppearance="@style/TextAppearance.AppCompat.Button" android:textColor="@color/ac_red" android:id="@+id/button_remove_device" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_zoneSettings_devices_deviceDetails_removeDeviceButton" style="@style/Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+</ScrollView>

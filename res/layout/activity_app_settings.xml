@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/container" android:background="0x106000b" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="UNKNOWN_DATA_0x3201" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_marginTop="16dp" android:layout_marginBottom="8dp" android:src="@drawable/ic_location_based_control" android:tint="@color/app_bar_settings_background" />
+    <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="@string/settings_locationBasedControl_description" />
+    <FrameLayout android:id="@+id/settingsFragment" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

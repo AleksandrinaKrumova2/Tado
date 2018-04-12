@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="16dp">
+        <ImageView android:id="@+id/beta_icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:src="@mipmap/ic_launcher" />
+        <TextView android:textSize="14sp" android:id="@+id/beta_description_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="@string/betaProgram_message" />
+        <EditText android:id="@+id/beta_first_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:hint="@string/betaProgram_firstNameField" android:maxLines="1" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+        <EditText android:id="@+id/beta_last_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:hint="@string/betaProgram_lastNameField" android:maxLines="1" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+        <EditText android:id="@+id/beta_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:hint="@string/betaProgram_emailField" android:cursorVisible="false" android:maxLines="1" android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" android:onClick="onEmailClick" />
+        <TextView android:textSize="12sp" android:id="@+id/beta_explanation_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/betaProgram_programInformation" />
+        <Button android:id="@+id/beta_send_request_button" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/betaProgram_sendButton" android:onClick="onSendBetaRequestClick" style="@style/flatButtonStyle_controlPanel" />
+    </LinearLayout>
+</ScrollView>

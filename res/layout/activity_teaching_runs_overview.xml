@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_bar_template" />
+        <include android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="32dp" layout="@layout/title_template" />
+        <ListView android:id="@+id/listView" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:listSelector="@color/transparent" android:choiceMode="singleChoice" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+        <include android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="32dp" android:layout_centerHorizontal="true" layout="@layout/proceed_button_template" />
+    </LinearLayout>
+</RelativeLayout>

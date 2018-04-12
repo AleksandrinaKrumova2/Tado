@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_bar_template" />
+        <include android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true" layout="@layout/title_template" />
+        <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_below="@id/title" android:layout_centerHorizontal="true" style="@style/bodyStyle1" />
+        <include android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/textview" android:layout_centerHorizontal="true" layout="@layout/image_template_single_nomargin" />
+        <Button android:id="@+id/start_sending" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3a01" android:layout_marginTop="8dp" android:text="@string/installation_sacc_positionDevice_findPosition_sendSignalButton" android:layout_below="@id/image" android:layout_centerHorizontal="true" android:onClick="startSending" />
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/start_sending" android:layout_centerHorizontal="true" layout="@layout/proceed_button_template" />
+    </RelativeLayout>
+</ScrollView>

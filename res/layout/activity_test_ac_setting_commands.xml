@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_bar_template" />
+        <include android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true" layout="@layout/title_template" />
+        <RelativeLayout android:orientation="vertical" android:id="@+id/control_panel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp" android:layout_below="@id/title">
+            <TextView android:id="@+id/control_panel_main_layout_ac_control_text_view" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/components_acSettingSelector_powerLabel" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/subheadTextStyle" />
+            <LinearLayout android:id="@+id/control_panel_main_layout_power_switch_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/power_highlight" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/highlighting_circle" android:scaleType="fitCenter" />
+                    <Switch android:id="@+id/control_panel_main_layout_power_switch" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/buttons_and_lines_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/control_panel_main_layout_power_switch_layout" android:layout_centerHorizontal="true">
+                <View android:id="@+id/control_first_line" android:background="@color/control_panel_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_marginBottom="8dp" />
+                <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@+id/mode_buttons_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"
+                    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/control_first_button_layout" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0"
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/highlighting_circle" android:scaleType="centerCrop" />
+                                <android.support.design.widget.FloatingActionButton android:id="@+id/control_first_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:backgroundTint="@color/button_mode_background_color" android:fabSize="1" />
+                            </FrameLayout>
+                        </LinearLayout>
+                        <TextView android:id="@+id/control_first_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/components_acModeSelector_coolModeLabel" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/control_second_button_layout" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0"
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/highlighting_circle" android:scaleType="centerCrop" />
+                                <android.support.design.widget.FloatingActionButton android:id="@+id/control_second_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:backgroundTint="@color/button_mode_background_color" android:fabSize="1" />
+                            </FrameLayout>
+                        </LinearLayout>
+                        <TextView android:id="@+id/control_second_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/components_acModeSelector_dryModeLabel" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/control_third_button_layout" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0"
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/highlighting_circle" android:scaleType="centerCrop" />
+                                <android.support.design.widget.FloatingActionButton android:id="@+id/control_third_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:backgroundTint="@color/button_mode_background_color" android:fabSize="1" />
+                            </FrameLayout>
+                        </LinearLayout>
+                        <TextView android:id="@+id/control_third_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/components_acModeSelector_fanModeLabel" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/control_fourth_button_layout" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0"
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/highlighting_circle" android:scaleType="centerCrop" />
+                                <android.support.design.widget.FloatingActionButton android:id="@+id/control_fourth_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:backgroundTint="@color/button_mode_background_color" android:fabSize="1" />
+                            </FrameLayout>
+                        </LinearLayout>
+                        <TextView android:id="@+id/control_fourth_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/components_acModeSelector_autoModeLabel" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@+id/control_fifth_button_layout" android:visibility="gone" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0"
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/highlighting_circle" android:scaleType="centerCrop" />
+                                <android.support.design.widget.FloatingActionButton android:id="@+id/control_fifth_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:backgroundTint="@color/button_mode_background_color" android:fabSize="1" />
+                            </FrameLayout>
+                        </LinearLayout>
+                        <TextView android:id="@+id/control_fifth_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/components_acModeSelector_heatModeLabel" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:id="@+id/control_second_line" android:background="@color/control_panel_line_color" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_marginTop="8dp" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/buttons_and_lines_layout"
+                <RelativeLayout android:id="@+id/control_panel_main_layout_temperature_layout" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="clip_vertical" android:id="@+id/control_panel_main_layout_temperature_down_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                            <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/temp_down_highlight" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/highlighting_circle" android:scaleType="centerCrop" />
+                            <ImageView android:id="@+id/control_panel_main_layout_temperature_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:src="@drawable/arrows_down" android:onClick="onTemperatureDownClick" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/control_panel_main_layout_temperature_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/control_panel_temp" android:layout_toRightOf="@+id/control_panel_main_layout_temperature_down_layout" android:layout_centerVertical="true" />
+                    <TextView android:textSize="46sp" android:textColor="@color/control_panel_dark" android:id="@+id/control_panel_main_layout_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="27" android:layout_toRightOf="@+id/control_panel_main_layout_temperature_icon" android:layout_centerVertical="true" />
+                    <LinearLayout android:gravity="clip_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/control_panel_main_layout_temperature" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                            <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/temp_up_highlight" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/highlighting_circle" android:scaleType="centerCrop" />
+                            <ImageView android:id="@+id/control_panel_main_layout_temperature_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:src="@drawable/arrows_up" android:onClick="onTemperatureUpClick" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/control_panel_main_layout_fan_layout" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/control_panel_main_layout_temperature_layout" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="clip_vertical" android:id="@+id/control_panel_main_layout_fan_down_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                            <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/fan_down_highlight" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/highlighting_circle" android:scaleType="centerCrop" />
+                            <ImageView android:id="@+id/control_panel_main_layout_fan_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:src="@drawable/arrows_down" android:onClick="onFanDownClick" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/control_panel_main_layout_fan_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fan_speed_icon" android:layout_toRightOf="@+id/control_panel_main_layout_fan_down_layout" android:layout_centerVertical="true" />
+                    <FrameLayout android:id="@+id/control_panel_main_layout_fan_frame_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/control_panel_main_layout_fan_icon" android:layout_alignBottom="@+id/control_panel_main_layout_fan_icon" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/control_panel_main_layout_fan" android:layout_width="UNKNOWN_DATA_0x2001" android:layout_height="UNKNOWN_DATA_0x2001" android:layout_marginLeft="8dp" android:src="@drawable/control_panel_fan_speed_high" android:layout_centerVertical="true" />
+                        <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="@color/control_panel_dark" android:id="@+id/control_panel_main_layout_fan_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/fan_speed_high" android:text="AUTO" android:layout_centerVertical="true" android:textAllCaps="true" />
+                    </FrameLayout>
+                    <LinearLayout android:gravity="clip_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/control_panel_main_layout_fan_frame_layout" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                            <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/fan_up_highlight" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/highlighting_circle" android:scaleType="centerCrop" />
+                            <ImageView android:id="@+id/control_panel_main_layout_fan_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:src="@drawable/arrows_up" android:onClick="onFanUpClick" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/control_panel_main_layout_fan_layout" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/swing_highlight" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/highlighting_rect" android:scaleType="centerCrop" />
+                        <Button android:textColor="@color/control_panel_dark" android:id="@+id/control_panel_main_layout_swing_button" android:background="@color/white" android:padding="8dp" android:layout_width="UNKNOWN_DATA_0x6401" android:layout_height="UNKNOWN_DATA_0x3201" android:layout_margin="8dp" android:text="on" android:drawableLeft="@drawable/control_panel_swing" android:drawablePadding="8dp" android:onClick="onSwingClick" android:textAllCaps="true" />
+                    </FrameLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ProgressBar android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/progressBar" android:visibility="invisible" android:layout_width="UNKNOWN_DATA_0x1801" android:layout_height="UNKNOWN_DATA_0x1801" android:layout_marginTop="8dp" android:layout_below="@+id/control_panel" android:layout_centerHorizontal="true" style="?unknown_attr_ref: 1010079" />
+        <include android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/progressBar" android:layout_centerHorizontal="true" layout="@layout/proceed_button_template" />
+        <TextView android:textColor="@xml/cooling_installation_button" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/repeat" android:background="0x106000d" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="16dp" android:text="@string/installation_sacc_setupAC_testACSettingCommands_testing_doesNotWorkButton" android:layout_below="@id/button" android:layout_centerHorizontal="true" android:onClick="restartRecording" android:textAllCaps="true" />
+    </RelativeLayout>
+</ScrollView>

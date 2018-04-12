@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout" android:background="@color/cooling_blue" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/include_main_zone" />
+        <fragment android:name="com.tado.android.app.NavigationDrawerFragment" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/navigation_drawer" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </android.support.v4.widget.DrawerLayout>
+    <com.tado.android.views.loadingindicator.LoadingView android:id="@+id/zones_progress_indicator" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f07008e" style="@style/LoadingIndicator" />
+</FrameLayout>

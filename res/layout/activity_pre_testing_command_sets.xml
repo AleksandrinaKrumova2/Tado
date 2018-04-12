@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/scrollbar_style">
+    <RelativeLayout android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_bar_template" />
+        <include android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true" layout="@layout/title_template" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/image_instructions" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_below="@id/title">
+            <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/ac_setup_pretesting_command_sets_doesnt_work" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/ac_setup_pretesting_command_sets_works" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/command_set_buttons" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_below="@+id/image_instructions"
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/installation_sacc_setupAC_onOffReduction_acTinderExplanation_noResponseLabel" android:layout_below="@+id/command_set_candidate_tryout" android:layout_centerHorizontal="true" style="@style/bodyStyle1" />
+                <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/imageView_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@xml/tinder_no_selector" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="@string/installation_sacc_setupAC_onOffReduction_acTinderExplanation_acRespondsLabel" android:layout_below="@+id/command_set_candidate_tryout" android:layout_centerHorizontal="true" style="@style/bodyStyle1" />
+                <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/imageView_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@xml/tinder_yes_selector" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/command_set_buttons" android:layout_centerHorizontal="true" layout="@layout/proceed_button_template" />
+    </RelativeLayout>
+</ScrollView>

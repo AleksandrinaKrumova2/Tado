@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_bar_template" />
+    <ListView android:id="@+id/command_set_list_view" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="0x0" android:dividerHeight="0dp" android:layout_below="@+id/title_bar" />
+</RelativeLayout>

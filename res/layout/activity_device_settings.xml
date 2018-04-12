@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="0x106000b" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@+id/device_settings_list_view" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/list_settings_divider" android:dividerHeight="1dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</LinearLayout>

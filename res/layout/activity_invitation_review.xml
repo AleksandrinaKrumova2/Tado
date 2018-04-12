@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/activity_vertical_margin">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:src="@drawable/house" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Title" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/account_invitation_title" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textview_invitation_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" />
+    <Button android:id="@+id/button_join_home" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/number10dp" style="@style/button_green" />
+    <Button android:id="@+id/button_reject_invitation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/number10dp" style="@style/button_white" />
+    <Button android:id="@+id/button_sign_out" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/number10dp" style="@style/button_white" />
+    <Button android:id="@+id/button_proceed_home" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/number10dp" style="@style/button_white" />
+</LinearLayout>

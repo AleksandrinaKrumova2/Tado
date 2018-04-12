@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_bar_template" />
+        <include android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar" android:layout_centerHorizontal="true" layout="@layout/title_template" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/options" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="48dp" android:layout_marginTop="32dp" android:layout_below="@id/title"
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/temperature_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/temp_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:src="@drawable/control_panel_temp" android:tint="@color/cooling_grey" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/installation_sacc_setupAC_recordACSettingCommands_modeCapabilities_temperatureLabel" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/fan_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:src="@drawable/ic_fan_speed_icon" android:tint="@color/cooling_grey" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/installation_sacc_setupAC_recordACSettingCommands_modeCapabilities_fanspeedLabel" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@+id/swing_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" />
+                <ImageView android:id="@+id/swing_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:src="@drawable/control_panel_swing" android:tint="@color/cooling_grey" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/installation_sacc_setupAC_recordACSettingCommands_modeCapabilities_swingLabel" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64dp" android:layout_below="@+id/options" android:layout_centerHorizontal="true" layout="@layout/proceed_button_template" />
+    </RelativeLayout>
+</ScrollView>
