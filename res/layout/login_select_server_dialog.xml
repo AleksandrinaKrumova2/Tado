@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioButton android:textAppearance="?unknown_attr_ref: 1010040" android:textColor="?unknown_attr_ref: 1010306" android:ellipsize="marquee" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/production_radio" android:paddingLeft="12dp" android:paddingRight="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:checkMark="?unknown_attr_ref: 1010219" android:minHeight="?unknown_attr_ref: 101004d" android:text="PRODUCTION" />
+    <RadioButton android:textAppearance="?unknown_attr_ref: 1010040" android:textColor="?unknown_attr_ref: 1010306" android:ellipsize="marquee" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/preproduction_radio" android:paddingLeft="12dp" android:paddingRight="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:checkMark="?unknown_attr_ref: 1010219" android:minHeight="?unknown_attr_ref: 101004d" android:text="STAGING" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/custom_server_radio" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="" android:layout_alignParentLeft="true" />
+        <EditText android:id="@+id/production_server" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="http://192.168.50.XXX/" android:layout_toRightOf="@+id/custom_server_radio" />
+    </RelativeLayout>
+</LinearLayout>

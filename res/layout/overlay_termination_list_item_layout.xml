@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/overlay_termination_list_item" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="24dp" android:checkMark="?unknown_attr_ref: 1010219" android:drawablePadding="16dp" />

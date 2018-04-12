@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/pickers_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+        <NumberPicker android:id="@+id/number_picker_dialog_picker_1" android:descendantFocusability="blocksDescendants" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_margin="16dp" android:layout_weight="1.0" />
+        <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="." />
+        <NumberPicker android:id="@+id/number_picker_dialog_picker_2" android:descendantFocusability="blocksDescendants" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_margin="16dp" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@+id/line" android:background="0x1060012" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x101" android:layout_marginTop="24dp" android:layout_below="@+id/pickers_layout" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:layout_below="@+id/line">
+        <Button android:id="@+id/number_picker_dialog_cancel_button" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" style="?unknown_attr_ref: 101032b" />
+        <Button android:id="@+id/number_picker_dialog_set_button" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="0x104000a" android:layout_weight="1.0" style="?unknown_attr_ref: 101032b" />
+    </LinearLayout>
+</RelativeLayout>

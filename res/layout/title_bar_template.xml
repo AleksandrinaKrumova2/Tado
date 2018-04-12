@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/heating_costs_action_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textSize="20sp" android:textColor="@color/white" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/title_bar_textview" android:background="0x106000d" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@*style/TextAppearance.Material.Widget.ActionBar.Title" />
+        <Spinner android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/username_spinner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </android.support.v7.widget.Toolbar>
+    <View android:background="@drawable/toolbar_dropshadow" android:padding="0dp" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x301" android:layout_margin="0dp" android:layout_below="@id/toolbar" />
+</RelativeLayout>

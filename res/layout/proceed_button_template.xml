@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+    <Button android:textColor="@color/white" android:id="@+id/proceed_button" android:padding="12dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="UNKNOWN_DATA_0x3a01" android:layout_marginTop="16dp" android:onClick="proceedClick" />
+</RelativeLayout>

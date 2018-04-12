@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ProgressBar android:id="@id/progressBar" android:layout_width="match_parent" android:layout_height="match_parent" android:max="100" android:progress="0" style="@style/LoadingViewProgressStyle" />
+    <TextView android:textColor="@color/white" android:ellipsize="none" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/updatingText" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/components_loadingIndicator_initialLoadingLabel" android:maxLines="1" />
+    <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/done" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_done_white_24dp" android:scaleType="center" />
+</merge>

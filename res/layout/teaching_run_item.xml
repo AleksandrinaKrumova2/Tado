@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:padding="8dp" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:id="@+id/temperature_range_layout" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="3.0">
+        <ImageView android:id="@+id/temperature_range_icon_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/control_panel_temp" />
+        <TextView android:id="@+id/temperature_range_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="16°..32°" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/fan_speed_layout" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="2.0">
+        <ImageView android:id="@+id/fan_speed_icon_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/ic_fan_speed_icon" />
+        <ImageView android:id="@+id/fan_speed_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/fan_speed_mid" />
+        <TextView android:id="@+id/fan_speed_auto_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="@string/mode_auto" android:textAllCaps="true" />
+    </LinearLayout>
+    <LinearLayout android:id="@+id/swing_layout" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="2.0">
+        <ImageView android:id="@+id/swing_icon_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/control_panel_swing" />
+        <TextView android:id="@+id/swing_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="ON" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@+id/completed_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/tick_for_overview" />
+    </LinearLayout>
+</LinearLayout>

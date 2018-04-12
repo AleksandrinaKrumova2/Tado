@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tado.android.times.view.CommunicationView android:id="@+id/communication_area" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/week_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@+id/change_schedule_days" android:padding="@dimen/times_block_padding_left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="72dp">
+                <TextView android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smartSchedule_home_scheduleDaysLabel" style="@style/subheadTextStyle" />
+                <TextView android:id="@+id/schedule_days_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/tempAndTimesSubheadTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/ic_add_white_24dp" android:contentDescription="@string/smartSchedule_home_addTimeBlockButton" android:fabSize="0" />
+    <View android:id="@+id/blocker" android:background="#50ffffff" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <com.tado.android.views.progressbar.ProgressBarComponent android:id="@id/progressBar" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-8dp" android:layout_marginBottom="-8dp" android:indeterminate="true" android:indeterminateBehavior="cycle" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+</FrameLayout>

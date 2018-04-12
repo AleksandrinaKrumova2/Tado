@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/login_background" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+        <android.support.v7.widget.GridLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="2" android:useDefaultMargins="true">
+            <TextView android:textSize="28sp" android:textStyle="bold" android:textColor="#505050" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/premiumUpgrade_subscriptionFlow_welcomeToPremium_title" android:layout_columnSpan="2" />
+            <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1401" android:layout_columnSpan="2" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/premium_confirmation" android:layout_columnSpan="2" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" />
+            <android.support.v4.widget.Space android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x2801" android:layout_columnSpan="2" />
+            <TextView android:id="@+id/confirmation_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_columnSpan="2" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" />
+        </android.support.v7.widget.GridLayout>
+    </ScrollView>
+    <android.support.v7.widget.AppCompatButton android:id="@+id/premium_payment_done" android:layout_width="match_parent" android:text="@string/premiumUpgrade_subscriptionFlow_welcomeToPremium_confirmButton" android:backgroundTint="#346a71" style="@style/premium_button" />
+</LinearLayout>

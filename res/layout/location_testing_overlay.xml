@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Headline" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/text_mobile_user" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Presence detection is running" android:layout_alignParentTop="true" />
+    <LinearLayout android:id="@+id/check_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/text_mobile_user">
+        <CheckBox android:id="@+id/check_notification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Notif" />
+        <CheckBox android:id="@+id/check_posted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Post" />
+        <CheckBox android:id="@+id/check_failed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Error" />
+        <CheckBox android:id="@+id/check_filtered" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Filter." />
+        <CheckBox android:id="@+id/check_unknown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="?" />
+    </LinearLayout>
+    <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/check_bar" />
+    <Button android:id="@+id/button_send_logs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Logs" android:layout_alignTop="@+id/map" android:layout_alignParentLeft="true" />
+    <Button android:id="@+id/button_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

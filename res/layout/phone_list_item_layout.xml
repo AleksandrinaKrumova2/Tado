@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="16sp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/phone_list_item" android:background="?attr/selectableItemBackground" android:paddingLeft="16dp" android:paddingTop="@dimen/number8dp" android:paddingRight="16dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x3001" android:drawablePadding="16dp" />

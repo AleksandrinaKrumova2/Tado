@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/premium_white_background_rounded_corners" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/premium_logo" />
+    <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/premiumUpgrade_smartScheduleAwayConfiguration_description" />
+    <android.support.v7.widget.AppCompatButton android:id="@+id/premium_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/premiumUpgrade_smartScheduleAwayConfiguration_learnMoreButton" style="@style/premium_button" />
+</LinearLayout>

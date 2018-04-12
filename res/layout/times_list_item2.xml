@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:padding="@dimen/times_block_container_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/times_block_title_text_size" android:textColor="@color/times_block_title_text_color" android:id="@+id/times_list_item_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Anyday" />
+    <com.tado.android.times.view.TimeBlocksView2 android:id="@+id/times_list_item_time_blocks_view" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0700ef" android:layout_below="@+id/times_list_item_title" />
+</RelativeLayout>

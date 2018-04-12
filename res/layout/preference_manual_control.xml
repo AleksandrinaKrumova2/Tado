@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:paddingTop="8dp" android:paddingRight="?unknown_attr_ref: 1010063" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?unknown_attr_ref: 101004d">
+    <ImageView android:id="0x1020006" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:src="@drawable/manual_control" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="6dp" android:layout_marginRight="6dp" android:layout_marginBottom="6dp" android:layout_toRightOf="0x1020006">
+        <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textColor="?unknown_attr_ref: 1010036" android:ellipsize="marquee" android:id="0x1020016" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_zoneSettings_terminationCondition_title" android:maxLines="1" />
+        <TextView android:textAppearance="?unknown_attr_ref: 1010042" android:textColor="?unknown_attr_ref: 1010038" android:id="0x1020010" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/components_terminationConditionSelector_manualLabel" android:maxLines="4" android:layout_below="0x1020016" android:layout_alignLeft="0x1020016" />
+    </RelativeLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="@string/settings_zoneSettings_terminationCondition_descriptionLabel" android:layout_below="0x1020006" />
+</RelativeLayout>
