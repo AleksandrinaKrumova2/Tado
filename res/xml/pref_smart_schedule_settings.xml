@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tado.android.settings.EarlyStartSwitchPreference android:key="key_pref_early_start" android:defaultValue="false" />
+    <android.support.v7.preference.Preference android:layout="@layout/early_start_image_preference" android:key="key_pref_early_start_image" />
+</android.support.v7.preference.PreferenceScreen>

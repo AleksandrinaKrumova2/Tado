@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="false" android:selectable="false" android:key="pref_key_title" android:summary="@string/settings_notifications_description" />
+    <android.support.v7.preference.SwitchPreferenceCompat android:title="@string/settings_notifications_lowBatteryLabel" android:key="key_pref_low_battery_notification" android:defaultValue="true" />
+    <android.support.v7.preference.SwitchPreferenceCompat android:title="@string/settings_notifications_awayModeLabel" android:key="key_pref_away_mode_notification" android:defaultValue="true" />
+    <android.support.v7.preference.SwitchPreferenceCompat android:title="@string/settings_notifications_homeModeLabel" android:key="key_pref_home_mode_notification" android:defaultValue="true" />
+    <android.support.v7.preference.SwitchPreferenceCompat android:title="@string/settings_notifications_openWindowLabel" android:key="key_pref_owd_notification" android:defaultValue="true" />
+    <android.support.v7.preference.SwitchPreferenceCompat android:title="@string/settings_notifications_esrLabel" android:key="key_pref_esr_notification" android:defaultValue="true" />
+</android.support.v7.preference.PreferenceScreen>

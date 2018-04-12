@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@color/cooling_installation_process_disabled" android:color="@color/cooling_installation_process_disabled" />
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@color/cooling_installation_process_highlight_color_pressed" android:color="@color/cooling_installation_process_highlight_color_pressed" />
+    <item android:state_focused="true" android:state_enabled="true" android:drawable="@color/cooling_installation_process_highlight_color_pressed" android:color="@color/cooling_installation_process_highlight_color_pressed" />
+    <item android:state_enabled="true" android:drawable="@color/cooling_installation_process_highlight_color" android:color="@color/cooling_installation_process_highlight_color" />
+</selector>
